@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"null-ecp.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Weison&#39;s Blog">
+<meta property="og:url" content="http://null-ecp.github.io/index.html">
+<meta property="og:site_name" content="Weison&#39;s Blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Weison">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://null-ecp.github.io/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Weison's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Weison's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/null-ecp" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://null-ecp.github.io/uncategorized/undefined.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avator.jpg">
+      <meta itemprop="name" content="Weison">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Weison's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/uncategorized/undefined.html" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-02-10 10:42:43" itemprop="dateCreated datePublished" datetime="2021-02-10T10:42:43+08:00">2021-02-10</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://null-ecp.github.io/IOS/IntevalIOS.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avator.jpg">
+      <meta itemprop="name" content="Weison">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Weison's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/IOS/IntevalIOS.html" class="post-title-link" itemprop="url">ios定时切换壁纸</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-02-09 19:00:34 / 修改时间：20:49:15" itemprop="dateCreated datePublished" datetime="2021-02-09T19:00:34+08:00">2021-02-09</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/IOS/" itemprop="url" rel="index"><span itemprop="name">IOS</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="整理"><a href="#整理" class="headerlink" title="整理"></a>整理</h2><p>在酷安看到了一组不错的壁纸，想换上，但是单独的一张看起来又不是很爽，想仿照miui上的那种超级壁纸，可以根据时间线来自动切换。</p>
+<p>正巧，在IOS14.3上更新了，可以在自动化里面设置壁纸，于是决定写一个自动化来进行定时设定壁纸.</p>
+<p>理了下思路：</p>
+<ol>
+<li>创建一个相册专门用作存放壁纸</li>
+<li>在icloud中存放一个配置文件</li>
+<li>设置出发条件 -&gt; 时间</li>
+<li>触发条件后执行：<ol>
+<li>获取当前时间</li>
+<li>读取配置文件，循环，获取当前时间对应的壁纸索引</li>
+<li>获取索引所在的壁纸</li>
+<li>设定壁纸</li>
+</ol>
+</li>
+</ol>
+<h2 id="开始操作"><a href="#开始操作" class="headerlink" title="开始操作"></a>开始操作</h2><ol>
+<li>首先创建一个相册，用作存放壁纸<br><img src="/images/iospicture.png" alt="相册"></li>
+<li>icloud中存放配置文件,下面是我用的配置文件的格式<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1&#x3D;01,02,03,04</span><br><span class="line">2&#x3D;05,06,07</span><br><span class="line">3&#x3D;08,09</span><br><span class="line">4&#x3D;10,11,12,13,14,15</span><br><span class="line">5&#x3D;16,17,18</span><br><span class="line">6&#x3D;19,20,21,22</span><br><span class="line">7&#x3D;23,00</span><br></pre></td></tr></table></figure>
+存放位置放在<code>shortcuts\wallpaper\wallpaper.txt</code>，其他路径下捷径无法访问</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://null-ecp.github.io/oracle/Select_Link.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avator.jpg">
+      <meta itemprop="name" content="Weison">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Weison's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/oracle/Select_Link.html" class="post-title-link" itemprop="url">拼接sql查询列之wm_concat()函数</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-16 13:27:34 / 修改时间：15:40:35" itemprop="dateCreated datePublished" datetime="2020-05-16T13:27:34+08:00">2020-05-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/oracle/" itemprop="url" rel="index"><span itemprop="name">oracle</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>讲一下在之前工作中碰到的问题:</p>
+<h2 id="业务场景"><a href="#业务场景" class="headerlink" title="业务场景"></a>业务场景</h2><ol>
+<li>前台通过深度学习识别图片上的数字编号把数据通过OPC方式传到后台.</li>
+<li>后台进行接收写入到数据库.</li>
+<li>报表系统通过查询图片对应的数据获取到图片上的编号信息.</li>
+</ol>
+<h2 id="业务剖析"><a href="#业务剖析" class="headerlink" title="业务剖析"></a>业务剖析</h2><p>三个步骤看起来不是很难,一个数据交互的场景,一个查询回显的场景.</p>
+<p>但是在数据交互这里,和传输方测试数据时发现了几个大坑…</p>
+<hr>
+<p>深度学习在识别编号后是以ASCLL码的格式写入到Channel信道里的. 而且每个中间还加了分隔符(大概是分隔符或者类似分隔符的一种格式).<br>我这边去读取就算配置了读取长度也无法读取整串编号. 而且编号还是以ASCLL码格式呈现.<br>然后就造成了写入了多比数据到数据库(ASCLL码直接转换,但读取无法修改只能通过)</p>
+<p>然后就有了类似下面的这种数据:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">| id   | Value | Paramid | update_time         |</span><br><span class="line">| ---- | ----- | ------- | ----------------    |</span><br><span class="line">| 0123 |  0    | 1000002 | 2020&#x2F;05&#x2F;16 02:11:23 |</span><br><span class="line">| 0123 |  2    | 1000003 | 2020&#x2F;05&#x2F;16 02:11:23 |</span><br><span class="line">| 0123 |  3    | 1000004 | 2020&#x2F;05&#x2F;16 02:11:23 |</span><br><span class="line">| 0123 |  1    | 1000005 | 2020&#x2F;05&#x2F;16 02:11:23 |</span><br></pre></td></tr></table></figure>
+<p>但实际上的我需要的结果是这样的:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">| id   | Value | Paramid | update_time         |</span><br><span class="line">| ---- | ----- | ------- | ----------------    |</span><br><span class="line">| 0123 | 0231  | 1000005 | 2020&#x2F;05&#x2F;16 02:11:23 |</span><br></pre></td></tr></table></figure>
+<p>查了一下,发现在oracle中实现了功能的这个函数叫<code>wm_concat()</code>.</p>
+<p>传入的参数为分组的字段名,查询出来的结果通过<code>,</code>来拼接的.</p>
+<p>demo:</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> t1.id,t2.Values,t1.update_time</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span>  t1,</span><br><span class="line">(<span class="keyword">select</span> id,wm_concat(<span class="keyword">Value</span>) <span class="keyword">as</span> <span class="keyword">Values</span></span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> <span class="keyword">group</span> <span class="keyword">by</span> id) t2</span><br><span class="line"><span class="keyword">where</span> t1.id <span class="operator">=</span> t2.id</span><br></pre></td></tr></table></figure>
+<p>output:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">| id   | Values   | Paramid | update_time         |</span><br><span class="line">| ---- | -------- | ------- | ----------------    |</span><br><span class="line">| 0123 | 0,2,3,1  | 1000005 | 2020&#x2F;05&#x2F;16 02:11:23 |</span><br></pre></td></tr></table></figure>
+<p>这个时候就很简单了,用<code>replace()</code>来把<code>,</code>替换成空字符就可以了.<br>demo:</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> t1.id,t2.Values,t1.update_time</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span>  t1,</span><br><span class="line">(<span class="keyword">select</span> id,replace(wm_concat(<span class="keyword">Value</span>),<span class="string">&#x27;,&#x27;</span>,<span class="string">&#x27;&#x27;</span>) <span class="keyword">as</span> <span class="keyword">Values</span></span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> <span class="keyword">group</span> <span class="keyword">by</span> id) t2</span><br><span class="line"><span class="keyword">where</span> t1.id <span class="operator">=</span> t2.id</span><br></pre></td></tr></table></figure>
+<p>output:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">| id   | Value | Paramid | update_time         |</span><br><span class="line">| ---- | ----- | ------- | ----------------    |</span><br><span class="line">| 0123 | 0231  | 1000005 | 2020&#x2F;05&#x2F;16 02:11:23 |</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://null-ecp.github.io/DataStruct/roundQueue.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avator.jpg">
+      <meta itemprop="name" content="Weison">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Weison's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/DataStruct/roundQueue.html" class="post-title-link" itemprop="url">数据结构篇 之 环形队列</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-29 10:22:22" itemprop="dateCreated datePublished" datetime="2020-03-29T10:22:22+08:00">2020-03-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-02-09 19:59:09" itemprop="dateModified" datetime="2021-02-09T19:59:09+08:00">2021-02-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/DataStruct/" itemprop="url" rel="index"><span itemprop="name">DataStruct</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><p>队列是一种先进先出的线性存储的数据结构，常用于缓存，消息队列（废话 ，我名字都叫队列）。<br>在进行大量数据交互时，队列能很有效的解决并发问题。</p>
+<p>但是又由于队列的先进先出的特性，但队列的进的速度 &gt; 队列出的速度时 ，就会出现以下状况：</p>
+<p><img src="/images/Queue.png" alt="队列满"></p>
+<p>在这种情况下肯定是不能进行插入了的,因为队尾指针已经走到最后. 但其实队首指针并不在起始索引的位置, 前面还是有空出的位置 , 但是如果把数据插在这里队列的<strong>先进先出</strong>的特性也就不复存在了 , 这种情况下就只能把队列中剩余的元素进行整体前移.</p>
+<p>前移就前移吧 , 数据量小的时候还算好 , 当数据量大的时候就相当于<strong>每次插入操作都要将之前的所有元素前移一位再插入</strong>(这个性能耗费程度可想而知).</p>
+<p>当然如果会想到用queue去处理缓存这种操作的人肯定也会想到这种情况<br>要避免每次插入都触发可以设置一个阈值,在插入时做一个判断, 判断剩余空间是否小于阈值 , 小于阈值就将元素移动.</p>
+<h2 id="环形队列"><a href="#环形队列" class="headerlink" title="环形队列"></a>环形队列</h2><p>上述情况虽然能有效解决普通队列的性能, 但是并不是最优解, 环形队列就可以很有效的解决这种情况 .</p>
+<p>首先可以理解一下什么是环形队列</p>
+<p>在计算机中并不存在环形结构, 数据保存都是线性下去的. 环形只是我们使用指针来进行取模运算做到的环形效果.</p>
+<p><img src="/images/roundQ.png" alt="环形队列示意图"></p>
+<h3 id="环形队列实现"><a href="#环形队列实现" class="headerlink" title="环形队列实现"></a>环形队列实现</h3><p>首先理一下环形队列存取数据的逻辑:</p>
+<ol>
+<li>内部维护两个指针 , 一个队首指针<code>head</code>, 一个队尾指针<code>end</code>.</li>
+<li>普通队列判断队空的条件 : <code>head == end</code> , 环形队列亦是.</li>
+<li>普通队列判断队满的条件 : <code>(end + 1) % max == head</code> , max为队列最大长度 , 加一为预留一个空位用作环形判断, 因为是环形结构 , 存到队列最大长度后,继续往队首继续存放 , 所以需要进行取模运算, 如果取模运算后和队首指针相同则该队列已满.</li>
+</ol>
+<p>逻辑理清楚后可以开始环形队列的实现<br>这里内部数据存放使用数组:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> weison.test;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 环形队列</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">roundQueue</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Object[] arr;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> maxLength, head, end;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 默认情况下 队列长度为10</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">roundQueue</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.maxLength = <span class="number">10</span>;</span><br><span class="line">        arr = <span class="keyword">new</span> Object[maxLength];</span><br><span class="line">        head = end = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">roundQueue</span><span class="params">(<span class="keyword">int</span> maxLength)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.maxLength = maxLength;</span><br><span class="line">        arr = <span class="keyword">new</span> Object[maxLength];</span><br><span class="line">        head = end = <span class="number">0</span>;</span><br><span class="line">    &#125;                </span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> Object[] getArr() &#123;</span><br><span class="line">        <span class="keyword">return</span> arr;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setArr</span><span class="params">(Object[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.arr = arr;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断是否队空</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 判断结果</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> head == end;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断是否队满</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 判断结果</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isFull</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (end + <span class="number">1</span>) % maxLength == head;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(Object o)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(isFull())&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;队列已满,无法插入&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        arr[end] = o;</span><br><span class="line">        end = (end + <span class="number">1</span>) % maxLength;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">pull</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (isEmpty())&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;队列为空 , 无法取出数据&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        Object temp = arr[head];</span><br><span class="line">        arr[head] = <span class="keyword">null</span>;</span><br><span class="line">        head = (head + <span class="number">1</span>) % maxLength;</span><br><span class="line">        <span class="keyword">return</span> temp;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="环形队列测试"><a href="#环形队列测试" class="headerlink" title="环形队列测试"></a>环形队列测试</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    roundQueue queue = <span class="keyword">new</span> roundQueue(<span class="number">4</span>);</span><br><span class="line">    <span class="comment">// 存放三个进去</span></span><br><span class="line">    queue.push(<span class="number">1</span>);</span><br><span class="line">    queue.push(<span class="number">2</span>);</span><br><span class="line">    queue.push(<span class="number">3</span>);</span><br><span class="line">    <span class="comment">// 此时最大长度为 4 队首 0 队尾 3</span></span><br><span class="line">    queue.print();</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出结果 :<br><img src="/images/Queueres.png" alt="测试结果"></p>
+<p>当前环形队列的内部情况就如图所示:</p>
+<p><img src="/images/roundstruc.png" alt="内部示意图"></p>
+<p>目前如果再去插入的话就会提示已经插满(因为需要一个位置去做环形判断) , 现在进行取出操作,取出两个然后继续执行插入:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    roundQueue queue = <span class="keyword">new</span> roundQueue(<span class="number">4</span>);</span><br><span class="line">    <span class="comment">// 存放三个进去</span></span><br><span class="line">    queue.push(<span class="number">1</span>);</span><br><span class="line">    queue.push(<span class="number">2</span>);</span><br><span class="line">    queue.push(<span class="number">3</span>);</span><br><span class="line">    <span class="comment">// 此时最大长度为 4 队首 0 队尾 3</span></span><br><span class="line">    queue.print();</span><br><span class="line">    System.out.println(<span class="string">&quot;=========================================&quot;</span>);</span><br><span class="line">    <span class="comment">// pop</span></span><br><span class="line">    queue.pull();</span><br><span class="line">    queue.pull();</span><br><span class="line">    <span class="comment">// max 4  head 2 end 3</span></span><br><span class="line">    queue.print();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出结果:<br><img src="/images/Queueres1.png" alt="测试结果"></p>
+<p>现在队列中的情况应该是这个样子的了:<br><img src="/images/roundQ1.png" alt="内部示意图"></p>
+<p>那么既然是环形结构,我再继续往里面push,肯定是继续往后面加的再加两个上去应该是这个样子:<br><img src="/images/roundQ2.png" alt="内部示意图"><br>用普通的线性队列来表示的现在应该是这样的:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="number">5</span>,<span class="keyword">null</span>,<span class="number">3</span>,<span class="number">4</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>那我们现在执行下插入操作后再遍历看看效果:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">   roundQueue queue = <span class="keyword">new</span> roundQueue(<span class="number">4</span>);</span><br><span class="line">   <span class="comment">// 存放三个进去</span></span><br><span class="line">   queue.push(<span class="number">1</span>);</span><br><span class="line">   queue.push(<span class="number">2</span>);</span><br><span class="line">   queue.push(<span class="number">3</span>);</span><br><span class="line">   <span class="comment">// 此时最大长度为 4 队首 0 队尾 3</span></span><br><span class="line">   queue.print();</span><br><span class="line">   System.out.println(<span class="string">&quot;=========================================&quot;</span>);</span><br><span class="line">   <span class="comment">// pop</span></span><br><span class="line">   queue.pull();</span><br><span class="line">   queue.pull();</span><br><span class="line">   <span class="comment">// max 4  head 2 end 3</span></span><br><span class="line">   queue.print();</span><br><span class="line">   System.out.println(<span class="string">&quot;=========================================&quot;</span>);</span><br><span class="line">   queue.push(<span class="number">4</span>);</span><br><span class="line">   queue.push(<span class="number">5</span>);</span><br><span class="line">   <span class="comment">// max 4  head 2 end 1</span></span><br><span class="line">   queue.print();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>测试结果:<br><img src="/images/Queueres2.png" alt="测试结果"></p>
+<p>可以看出 , 实际效果也和我们猜测的相同.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://null-ecp.github.io/linux/libsodium.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avator.jpg">
+      <meta itemprop="name" content="Weison">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Weison's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/linux/libsodium.html" class="post-title-link" itemprop="url">linux安装libsodium失败解决方法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-25 16:30:29 / 修改时间：20:17:25" itemprop="dateCreated datePublished" datetime="2020-02-25T16:30:29+08:00">2020-02-25</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>emmm , 最近因为疫情关系在宿舍里面闲了下来 ，于是打算重新搞个vps来玩玩（要玩的话首推不要买国内的…）。</p>
+<p>正好赶上一家服务商(tmhhost)搞活动 , 双线的<code>CN2 GIA</code>线路，嘿嘿，用来搭v2ray或者酸酸乳还是很舒服的。</p>
+<p>选了一个还不错的配置（主要还需要把博客，离线下载，文件服务器也给搬过去）。</p>
+<p>等机子初始化完之后，用win10自带的powershell连接之后更新了下软件，修改了下密码后，就去找了个脚本安装酸酸乳。</p>
+<p>不过貌似这家服务商的系统有点问题（第一次用的比较熟悉的debian），脚本走到一半出现个<code>libsodium install failed</code> ，我想软件安装失败可能是软件源的问题吧 ，然后为了省事直接去vps后台换了个新系统（ubuntu18）。</p>
+<p>结果ubuntu脚本走到一半也出现了这个问题，我没办法就只好考虑自己编译安装了</p>
+<h2 id="dibian系-安装libsodium"><a href="#dibian系-安装libsodium" class="headerlink" title="dibian系 安装libsodium"></a>dibian系 安装libsodium</h2><ol>
+<li>先获取下root权限（如果本身就是用root用户登录的就但我没说额）</li>
+<li>安装C编译依赖<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install build-essential wget -y</span><br></pre></td></tr></table></figure></li>
+<li>下载Libsodium最新版本，可以去官网下载，也可以去git上下载，选择一个下载快的就可以了（都是最新版的）<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 从官网下载</span></span><br><span class="line">wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz</span><br><span class="line"><span class="meta">#</span><span class="bash"> 从github下载</span></span><br><span class="line">wget https://github.com/jedisct1/libsodium/releases/download/1.0.18/libsodium-1.0.18.tar.gz</span><br></pre></td></tr></table></figure></li>
+<li>解压<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xzvf *.tar.gz</span><br></pre></td></tr></table></figure></li>
+<li>编译安装<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 生成配置文件</span></span><br><span class="line">cd libsodium* &amp;&amp; ./configure</span><br><span class="line"><span class="meta">#</span><span class="bash"> 编译安装</span></span><br><span class="line">make -j8 &amp;&amp; make install</span><br></pre></td></tr></table></figure></li>
+<li>写入库文件并加载配置文件<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo /usr/local/lib &gt; /etc/ld.so.conf.d/usr_local_lib.conf</span><br><span class="line">ldconfig</span><br></pre></td></tr></table></figure>
+好了，安装完linsodium之后再走一遍脚本就没有问题了</li>
+</ol>
+<p>当然在我搞完这个后也想到了，centos系（红帽毕竟不开源习惯叫cent系了）的估计也是这个样子 ， 下面给下centos的解决步骤</p>
+<h2 id="centos系安装libsodium"><a href="#centos系安装libsodium" class="headerlink" title="centos系安装libsodium"></a>centos系安装libsodium</h2><p>步骤和debian几乎一样，不过也有些老哥估计不是熟悉这些发行版的包管理</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 依赖</span></span><br><span class="line">yum -y groupinstall &quot;Development Tools&quot;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 下载</span></span><br><span class="line">wget https://github.com/jedisct1/libsodium/releases/download/1.0.11/libsodium-1.0.18.tar.gz</span><br><span class="line"><span class="meta">#</span><span class="bash"> 解压</span></span><br><span class="line">tar xzvf *.tar.gz &amp;&amp; cd libsodium*</span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装</span></span><br><span class="line">./configure &amp;&amp; make -j8 &amp;&amp; make install</span><br><span class="line"><span class="meta">#</span><span class="bash"> 加载库配置</span></span><br><span class="line">echo /usr/local/lib &gt; /etc/ld.so.conf.d/usr_local_lib.conf</span><br><span class="line">ldconfig</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://null-ecp.github.io/CSharp/PortAssistant.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avator.jpg">
+      <meta itemprop="name" content="Weison">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Weison's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/CSharp/PortAssistant.html" class="post-title-link" itemprop="url">c# 串口调试助手</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-13 11:43:49" itemprop="dateCreated datePublished" datetime="2020-02-13T11:43:49+08:00">2020-02-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-14 20:04:06" itemprop="dateModified" datetime="2020-02-14T20:04:06+08:00">2020-02-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSharp/" itemprop="url" rel="index"><span itemprop="name">CSharp</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>因工作需求 , 暂时从java web 转 c# 开发了, 2333.</p>
+<p>花了两三天看了下c#的基础语法 , 感觉和java差别不是很大. 然后接到了第一份需求 ，需要用winform写一个串口通信的程序。</p>
+<p>这可难倒我了，虽然感觉上c# 和 java差别不大，但是我用c#来写的程序是我用java从来没写过的呀 ， 这就相当于我得重新学一遍了。</p>
+<p>由于串口学习上 ，需要两端开启串口来调试收发数据 ， 这里找我师傅要了一个还不错的串口调试助手，但是发现这个串口调试助手 ， 不知道为什么 ， 扫描不出来我添加的虚拟串口（在我自己的本子上扫描不出来 ， 在公司的电脑没有问题） ， 这有点气人 。 本着学习的态度 ， 想着直接写一个自用的串口调试助手好了 ， 也当串口通信的练手Demo好了。</p>
+<p>下面把编写时碰到的一些需要注意的地方给讲一下 , 也当作给自己巩固一下</p>
+<h2 id="串口"><a href="#串口" class="headerlink" title="串口"></a>串口</h2><p><strong>先把串口通信的一些基础给讲一下</strong></p>
+<p>一个串口对象 ，必须有的几个属性 ：<code>端口号</code>，<code>波特率</code>,<code>数据位</code>,<code>停止位</code>,<code>校验位</code></p>
+<blockquote>
+<p>如果不知道这些是什么 ， 可以自己打开设备管理器查看 ， 有串口的电脑可以查看到当前串口的一些属性</p>
+</blockquote>
+<p>有设置过这些属性后 ， 端口才能进行正常的数据传输功能 ， 当然也只能进行数据的发送:<br>数据的发送比较简单 , 直接调用串口对象的<code>Write()</code>方法即可 , Write方法有多个重载方法</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. Write(String data);</span></span><br><span class="line"><span class="comment">// 传参为一个字符串 , 比较适用于16进制字符串传输或不带中文的字符串传输</span></span><br><span class="line"><span class="comment">// 我在测试中发现如果带上中文  , 那么接收到的一定是 ?</span></span><br><span class="line">port.Write(data);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. Write(byte[] data, int start, int count);</span></span><br><span class="line"><span class="comment">// 传参为字节数组, 传输字节数组起始位置, 传输长度</span></span><br><span class="line"><span class="comment">// 一般用于带中文的传输吧 , 当然其他也可以用 , 这种比较通用</span></span><br><span class="line">port.Write(data, start, count);</span><br></pre></td></tr></table></figure>
+<p>如果需要接收数据的话 ， 我们还需要给串口对象挂载上数据接收事件, 在c# 中串口对象有一个<code>DataREceived</code>属性用来挂载数据接收事件的</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">port.DataReceived += <span class="keyword">new</span> SerialDataReceivedEventHandler(functionName);</span><br></pre></td></tr></table></figure>
+<p><strong>ps :不要给这个属性添加多个(多个指&gt;1)触发事件 , 不然 , 当串口接收数据后 , 所有的挂载事件都会被触发一遍</strong></p>
+<blockquote>
+<p>(是的没错 , 接收一条消息触发了四次,主要原因是我在接收数据前测试串口开关时候正常 , 然后开关了四次 , 这个事件添加我写在了串口初始化里面…).</p>
+</blockquote>
+<p>当然 ,如果没有在触发事件中调用窗口控件同步的委托的话 , 还没有啥太大的问题(前提是你的挂载事件中没有对线程 ,数据进行预处理)</p>
+<blockquote>
+<p>我在这个串口调试助手的初期编写阶段 ,以为这个小Demo不会有太多的代码量, 于是把所有的东西都写在主窗口里面</p>
+<p>然后可想而知 , 测试接收数据的时候 , 事件触发四次 -&gt; 窗口控件同步四次 , 最后的显示结果就是:除了第一条数据接收正常, 后面的三条全是空数据 , 不过这里没有图片了 , 没有用git来管理 , 那个有问题的版本已经刷过去了 QWQ</p>
+</blockquote>
+<p>串口部分的知识到这里应该就差不多结束了 .</p>
+<h2 id="Winform"><a href="#Winform" class="headerlink" title="Winform"></a>Winform</h2><p><img src="/images/PortMain.png" alt="PortAssistant"></p>
+<p>如图就是我编写的串口调试助手的窗体界面, 这个界面没啥好说的 , 都是直接拖控件来完成的 ,而且都是一些比较常用的控件.</p>
+<p>这里讲一下一个比较重要的点 , 由于代码有点多(上面也提到了 ,就把串口相关的部分给提了出来单独写了一个PortHelp类) , 对应的 , 串口的收发数据的方法也提了过来 , 这个时候出现问题了 , 我把显示数据区的控件ui更新是写在了接收事件里</p>
+<blockquote>
+<p>调用委托更新ui大家都知道 ,直接 <code>this.invoke(delegateObj)</code>或者<code>this.BegainInvoke(delegateObj)</code></p>
+</blockquote>
+<p>但是 , 我把这个方法移动到另外一个类的时候提示 , <strong><code>this未定义invoke函数或属性</code></strong> , 我想起来 , 窗体类中可以调用是因为 , 窗体类继承自线程 , 肯定可以调用 , 可是串口辅助类需要继承这东西干啥</p>
+<p>这个时候困扰我的第二个问题诞生了(第一个就上面那个触发多次接收的问题…当时看了老半天找不到原因 , 也想过是多次触发 , 但不知道为啥就是四次, 扯远了…回归正题)<br><strong>咋样才能让接收区ui能更新接收到的数据</strong><br>其实在串口辅助类不能调用的时候就想到了用线程来处理 , 但是我对线程不是很熟悉(基本不咋懂的阶段) , 于是到查阅了相关资料了解到了线程的基本操作(创建启动销毁)</p>
+<p>然后打算在主窗体里写一个线程 ， 在开启串口的时候创建对象并开启线程进行循环接收数据：</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义成员变量</span></span><br><span class="line">Thread recv_thread;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 接收数据线程体</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Recv_Thread</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">     <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">         <span class="comment">// 存在发送数据同步控件</span></span><br><span class="line">         <span class="keyword">if</span> (! String.IsNullOrEmpty(portHelp.Recv_data)) &#123;</span><br><span class="line">             <span class="comment">// 调用更新ui的委托</span></span><br><span class="line">             <span class="keyword">this</span>.BeginInvoke(Recv_Show, portHelp.Recv_data);</span><br><span class="line">             <span class="comment">// 暂时忽略这个 ， 这个是用来统计接收数据字节数的</span></span><br><span class="line">             <span class="keyword">this</span>.BeginInvoke(Dock_CountR, portHelp.Recv_data);</span><br><span class="line">             <span class="comment">// 重置接收数据</span></span><br><span class="line">             portHelp.Recv_data = <span class="string">&quot;&quot;</span>;</span><br><span class="line">         &#125;</span><br><span class="line">         Thread.Sleep(<span class="number">50</span>);</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 然后就是在打开/关闭 串口按钮里面做判断</span></span><br><span class="line"><span class="comment">// 在打开串口的时候new出实例并启动线程</span></span><br><span class="line">recv_thread = <span class="keyword">new</span> Thread(Recv_Thread);</span><br><span class="line">recv_thread.IsBackground = <span class="literal">true</span>;</span><br><span class="line">recv_thread.Start();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 在关闭串口时关闭线程</span></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (recv_thread.IsAlive) &#123;</span><br><span class="line">        recv_thread.Abort();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">catch &#123; &#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这里只放出了线程具体操作部分的代码 ，其他的委托事件 ， 按钮事件就没有具体写出来 ， 毕竟太多了 ， 文末会附上github地址</p>
+</blockquote>
+<p>其实到这里 ， 就已经差不多了 ， 一个最最简单的串口调试助手 （拥有基础的收发，开关， 串口设置）就算是写完了。<br>但本着写都写了不如优化完全的想法，开始了功能完善的路。</p>
+<h2 id="进阶-功能完善"><a href="#进阶-功能完善" class="headerlink" title="进阶 - 功能完善"></a>进阶 - 功能完善</h2><p>那既然是作为串口通信，避免不了的肯定需要进行16进制的数据发送，同时也需要进行16进制的数据接收和普通接收数据的16进制显示功能<br>好的， 一上来就是个麻烦问题（虽然不难，但是挺繁琐的），想了下如果要这么多的（16进制收发 ， 16进制显示，再加上原本的字符串和字节数组的发送方式）就要写6个重载了 ， 很是麻烦，而且复用性太差了 ， 如果后面又在别的地方需要进行数据转换，岂不是又要重写？ 于是这里我直接写了个字符处理的工具类<br>想了下还是不附上代码了，需要的去github看叭。</p>
+<p>字符处理这块搞完了然后是对具体的业务逻辑的完善</p>
+<ul>
+<li>首先是16进制发送<br>这里主要在点击发送的时候做了一个判断，时候勾选16进制发送，贴上代码：<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 判断是否勾选16进制发送</span></span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">this</span>.ckb_Send_Hex.Checked) &#123;</span><br><span class="line">    portHelp.writeByHex(content);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    portHelp.write(content);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>然后是接收数据以16进制显示<br>emm，还是用了一个Checkbox来的，这里我在更新ui的委托方法体里做的判断：<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 判断是否勾选为16进制显示</span></span><br><span class="line">data = <span class="keyword">this</span>.ckb_Recv_Hex.Checked ? charUtils.string2Hex(data) : data;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<p>字符功能这块完善完毕， 然后给数据显示区的功能也给完善了一点</p>
+<p>既然需要进行调试 , 那么肯定是需要给显示区接收到的数据进行分包显示的(添加时间戳), 而且也需要对接收到的数据进行16进制转码显示</p>
+<ul>
+<li>添加时间戳显示<br>逻辑也还是和上面一样 , 用了一个checkbox来做的 , 在更新ui的委托方法里判断是否勾选:<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取时间戳</span></span><br><span class="line"><span class="built_in">string</span> date = <span class="keyword">this</span>.ckb_Recv_Time.Checked? DateTime.Now.ToString(<span class="string">&quot;HH:mm:ss&quot;</span>): <span class="literal">null</span>;</span><br><span class="line">date = String.IsNullOrEmpty(date)? <span class="string">&quot;&quot;</span>: <span class="string">&quot;[&quot;</span> + date + <span class="string">&quot;]&quot;</span>;</span><br><span class="line"><span class="comment">// 拼接</span></span><br><span class="line">data = date + <span class="string">&quot; : &quot;</span> + data;</span><br></pre></td></tr></table></figure>
+加上时间戳显示后 , 数据看起来跟舒服了, 但是, 我们毕竟还有要发送的数据, 如果只在接收端才看得到数据的话也不是很好进行调试, 于是也把显示发送这个功能给加了上来:</li>
+</ul>
+<ol>
+<li>由于数据接收的ui更新已经是有了的 , 所以这里我们并不需要再去写这个实现 , 主要需要考虑的是在什么条件下进行调用.</li>
+<li>调用这一块好解决，接收那边由于是写了新线程死循环来更新接收到的数据（接收毕竟需要进行判断）， 而发送不需要进行判断什么时候才会触发，我们手动点击发送按钮才会执行发送操作， 所以我们只要在发送成功后调用委托事件即可：<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 判断是否勾选显示发送</span></span><br><span class="line"><span class="keyword">if</span> (ckb_Send_show.Checked)</span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">this</span>.Invoke(Recv_Show, content);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>添加完了之后再运行， 发送的数据和接收的数据倒是都能显示了 ， 不过这两没区分啊 ，都分不出来哪个是发送的哪个是接收的。我在这里就加了一个开关来判断， 如果开关为true则为发送的消息 ，给这条消息拼接上<code>→→</code>, 为false则为接受收的消息 ， 拼接上<code>←←</code>, 这样来用以区分。<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在更新ui里进行判断和拼接 每次判断更新ui后都进行开关重置</span></span><br><span class="line">txt_Port_Recv.Text += date + (isSend? <span class="string">&quot; →→ &quot;</span>: <span class="string">&quot; ←← &quot;</span>) + data + <span class="string">&quot;\r\n&quot;</span>;</span><br><span class="line"><span class="comment">// 修改控件显示判断</span></span><br><span class="line">isSend = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 由于发送的触发都是在我们进行串口的写入操作 ， 所以我们只需要在串口写入后进行开关的开启操作即可</span></span><br><span class="line"><span class="comment">// 判断是否勾选显示发送</span></span><br><span class="line"><span class="keyword">if</span> (ckb_Send_show.Checked)</span><br><span class="line">&#123;</span><br><span class="line">   isSend = <span class="literal">true</span>;</span><br><span class="line">   <span class="keyword">this</span>.Invoke(Recv_Show, content);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>修改完后看起来可就舒服多了，不过还有个问题还是让我很难受，显示区的数据全部都挤在一块（有点强迫症，密密麻麻的看着真难受），于是又加了了个发送新行的功能 ， 这样看起来数据之间就有空行了：(逻辑还是一样的，添加个勾选判断)<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 判断是否勾选发送新行</span></span><br><span class="line">content = <span class="keyword">this</span>.ckb_Port_Send_newLine.Checked? content + <span class="string">&quot;\r\n&quot;</span>: content;</span><br></pre></td></tr></table></figure>
+发送显示这一块写的差不多了，接着还有一个16进制显示，毕竟我们有16进制发送 ， 没有接收数据解码到16进制显示可不行。<br>16进制显示这个好搞的很，由于之前因为强迫症写了一个转码功能巨全的工具类 ， 所以这里只需要添加一个判断然后调用解码就可以了：<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 判断是否勾选为16进制显示</span></span><br><span class="line">data = <span class="keyword">this</span>.ckb_Recv_Hex.Checked ? charUtils.string2Hex(data) : data;</span><br></pre></td></tr></table></figure>
+数据显示这一块的功能应该就修改的差不多了 。</li>
+</ol>
+<p>另外给显示区域加了一个双击事件（主要是一次调试如果发送数据过多 ， 数据会显得超级乱 ，清空一下会比较舒服）：</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 接收数据区双击清空</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">txt_Port_recv_DBClick</span>(<span class="params"><span class="built_in">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    DialogResult result = MessageBox.Show(<span class="string">&quot;是否清空接收区内容?&quot;</span>, <span class="string">&quot;提示&quot;</span>, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);</span><br><span class="line">    <span class="keyword">if</span> (result == DialogResult.OK)</span><br><span class="line">    &#123;</span><br><span class="line">        TextBox box = sender <span class="keyword">as</span> TextBox;</span><br><span class="line">        box.Text = <span class="string">&quot;\r\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>接着就是最后的两个功能 ，定时发送和循环发送（至于为啥会想到有这两个功能 ， 也是因为我师傅丢给我的任务有类似的需求，就想着干脆也给熟悉一下）</p>
+<h3 id="定时发送"><a href="#定时发送" class="headerlink" title="定时发送"></a>定时发送</h3><p>定时发送功能还是比较简单（为啥这么说，主要定时发送比较常规的操作，在循环发送里碰到了一个大坑，这个后面说）</p>
+<p>定时发送的话 ， 其实就用一个Timer来处理：</p>
+<ol>
+<li><p>首先定义好成员变量和定时器的方法体：</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定时器</span></span><br><span class="line">System.Windows.Forms.Timer sendTimer = <span class="keyword">new</span> System.Windows.Forms.Timer();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 在窗口的构造方法里挂载上定时器事件</span></span><br><span class="line"><span class="comment">// 定时器挂载事件</span></span><br><span class="line">sendTimer.Tick += <span class="keyword">new</span> EventHandler(Timer_Writer);</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 定时器方法体</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Timer_Writer</span>(<span class="params"><span class="built_in">object</span> sender, EventArgs e</span>)</span> &#123;</span><br><span class="line">    Write(getSendContent());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>其实在这里也困扰了一会 , 因为定时器需要循环执行挂载事件, 我最开始想的是直接调用写好的Write(String data)方法，但是这个方法需要传参，而定时器传参这一块我又没有头绪有点懵逼，然后看了下之前写的点击发送的地方 ， 把里面获取发送内容的地方给提取出来做了一个函数处理</p>
+</blockquote>
+</li>
+<li><p>然后就是逻辑处理, 这里依然是使用了勾选判断来获取时候需要开启定时发送, 然后用了一个文本框来获取定时间隔:</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="keyword">this</span>.ckb_Send_Timer.Checked) &#123;</span><br><span class="line">  <span class="comment">// 读取定时参数</span></span><br><span class="line">  <span class="built_in">int</span> times = <span class="number">100</span>;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">      times = <span class="built_in">int</span>.Parse(<span class="keyword">this</span>.txt_Send_Timer.Text.ToString().Trim());</span><br><span class="line">  &#125; catch (Exception ex) &#123;</span><br><span class="line">      MessageBox.Show(<span class="string">&quot;定时器参数设置错误 , 将使用默认值 : 1000 ms&quot;</span>);</span><br><span class="line">      times = <span class="number">1000</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 设定定时器参数</span></span><br><span class="line">  sendTimer.Interval = times;</span><br><span class="line">  sendTimer.Enabled = <span class="literal">true</span>;</span><br><span class="line">  <span class="comment">// 定时器启动</span></span><br><span class="line">  sendTimer.Start();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>定时发送的雏形写好了 , 运行一遍, 没问题,可以正常发送, 然后打算关掉来写别的功能. 嗯???? 关闭呢 , 咋这定时发送开了就管不了…好的现在我们需要再完善一下, 需要再加个开关来判断当前是否开启定时器. 我们需要关闭定时器就肯定需要一个按钮来触发, 但再加按钮又不好看(主要拖控件搞布局也麻烦), 于是打算再按钮点击事件里加入判断:</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 判断当前是否为定时器开启状态</span></span><br><span class="line"><span class="keyword">if</span> (TimerOpen) &#123;</span><br><span class="line">    <span class="keyword">try</span></span><br><span class="line">    &#123;</span><br><span class="line">        sendTimer.Stop();</span><br><span class="line">        sendTimer.Enabled = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    catch (Exception ex)</span><br><span class="line">    &#123;</span><br><span class="line">        MessageBox.Show(ex.Message);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="keyword">this</span>.btn_Port_send.BackColor = Color.White;</span><br><span class="line">        <span class="keyword">this</span>.btn_Port_send.Text = <span class="string">&quot;点击发送&quot;</span>;</span><br><span class="line">        TimerOpen = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 然后再开启定时器的后面添加上按钮的修改</span></span><br><span class="line"><span class="comment">// 修改按钮状态</span></span><br><span class="line"><span class="keyword">this</span>.btn_Port_send.BackColor = Color.Red;</span><br><span class="line"><span class="keyword">this</span>.btn_Port_send.Text = <span class="string">&quot;停止发送&quot;</span>;</span><br><span class="line">TimerOpen = <span class="literal">true</span>;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p><strong>定时发送的功能就实现了 , 下面再把循环发送给实现一下</strong></p>
+<h3 id="循环发送"><a href="#循环发送" class="headerlink" title="循环发送"></a>循环发送</h3><ol>
+<li><p>循环发送和定时器相比其实还更简单一点(如果不写延迟的话), 一个勾选判断, 一个获取输入的问题:</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 判断是否勾选循环发送</span></span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">this</span>.ckb_Send_Each.Checked) &#123;</span><br><span class="line">    <span class="built_in">int</span> count = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        count = <span class="built_in">int</span>.Parse(<span class="keyword">this</span>.txt_Send_Each.Text.ToString().Trim());</span><br><span class="line">    &#125; catch (Exception ex) &#123;</span><br><span class="line">        MessageBox.Show(<span class="string">&quot;循环次数输入错误 ，将执行默认循环次数：5&quot;</span>);</span><br><span class="line">        count = <span class="number">5</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (count &gt; <span class="number">20</span>) &#123;</span><br><span class="line">        MessageBox.Show(<span class="string">&quot;循环次数过大 , 请填写小于 20 的值&quot;</span>);</span><br><span class="line">        count = <span class="number">20</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; count; i++) &#123;</span><br><span class="line">        Write(getSendContent());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>但是想着直接全部循环发送掉应该会出点问题, 打算再发送的时候加个延迟:</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 循环默认延时500ms</span></span><br><span class="line">Thread.sleep(<span class="number">500</span>);</span><br></pre></td></tr></table></figure></li>
+<li><p>这不加不要紧, 加了之后进行调试 , 发现主窗口ui会在循环发送的时候卡死(主要是这里的sleep操作, 没想到直接卡到ui线程了), 查了点资料找到了解决办法<code>Application.DoEvents()</code>这个方法可以用来执行当前窗口的其他事件(比如ui更新事件), 所以可以在sleep的时间里进行一个循环, 每循环一次执行一次更新事件:</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 用于循环发送时更新ui</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Delay</span>(<span class="params"><span class="built_in">int</span> mm</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    DateTime current = DateTime.Now;</span><br><span class="line">    <span class="keyword">while</span> (current.AddMilliseconds(mm) &gt; DateTime.Now)</span><br><span class="line">    &#123;</span><br><span class="line">        Application.DoEvents();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 然后把之前循环发送的sleep替换成这个方法</span></span><br><span class="line"><span class="comment">// 循环默认延时500ms</span></span><br><span class="line">Delay(<span class="number">500</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<h2 id="完善"><a href="#完善" class="headerlink" title="完善"></a>完善</h2><p>在写上面两个功能的时候有个小问题需要解决一下</p>
+<p>就是如果显示区的长度超过了可显示的区域, 每次新加一条数据显示出来, 马上又会焦点到第一行, 这对调试起来是十分不友好的</p>
+<p>于是我又给显示区加了个文本改变事件:</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 数据显示区焦点最后一行</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Txt_Content_Changed</span>(<span class="params"><span class="built_in">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    TextBox box = sender <span class="keyword">as</span> TextBox;</span><br><span class="line">    <span class="comment">//文本框选中的起始点在最后</span></span><br><span class="line">    box.SelectionStart = box.TextLength;</span><br><span class="line">    <span class="comment">//将控件内容滚动到当前插入符号位置</span></span><br><span class="line">    box.ScrollToCaret();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样一来数据就可以一直焦点在最后一行 , 然后还有个小bug…</p>
+<p>就是, 定时和循环的勾选问题, 其他功能同时勾选都可以 , 因为不冲突 , 但是这两个是肯定不行的(我在发送按钮事件中两个的判断都写了return 不会往下再执行, 而且这两同时操作肯定会直接崩掉)</p>
+<p>于是还需要给这两加上一个事件用来处理, 基础逻辑就是在点击或者切换选中状态的时候判断一下另一个的选中状态:</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 勾选判定</span></span><br><span class="line"><span class="comment"> * 定时器与循环只可选其一</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Send_checked</span>(<span class="params"><span class="built_in">object</span> sender, EventArgs e</span>)</span> &#123;</span><br><span class="line">    CheckBox box = sender <span class="keyword">as</span> CheckBox;</span><br><span class="line">    <span class="keyword">switch</span> (box.Text) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;定时发送&quot;</span>:</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">this</span>.ckb_Send_Each.Checked)</span><br><span class="line">            &#123;</span><br><span class="line">                box.Checked = <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;循环发送&quot;</span>:</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">this</span>.ckb_Send_Timer.Checked)</span><br><span class="line">            &#123;</span><br><span class="line">                box.Checked = <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>功能方面就都完善了, 然后是对实际使用的方便程度上进行了一些逻辑上的优化</p>
+<hr>
+<p>在底部添加了一个dock来显示当前串口的信息和写/读的总字节数.</p>
+<p>前面串口信息的状态都很方便, 写一个委托来更新即可 , 然后判断是开启还是关闭只需要写在开启按钮里面(有写好的串口状态判断)</p>
+<p>然后是计算读写总字节:</p>
+<ul>
+<li>写了两个委托来更新控件(有点偷懒 , 其实可以把控件当作参数传入然后写一个方法的):<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 统计发送字节数</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">countWriteBytes</span>(<span class="params">String data</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">int</span> count = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        count = <span class="built_in">int</span>.Parse(<span class="keyword">this</span>.Dock_lbl_WBytes.Text.ToString().Trim());</span><br><span class="line">    &#125; catch &#123; &#125; <span class="comment">// 基本只有第一次发送会出现转换错误 ， 但是有赋予初始值0 ， 这里就不做异常处理</span></span><br><span class="line">    count += charUtils.string2ByteArr(data).Length;</span><br><span class="line">    <span class="keyword">this</span>.Dock_lbl_WBytes.Text = count.ToString();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 统计接收字节数</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">countReadBytes</span>(<span class="params">String data</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">int</span> count = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        count = <span class="built_in">int</span>.Parse(<span class="keyword">this</span>.Dock_lbl_RBytes.Text.ToString().Trim());</span><br><span class="line">    &#125;</span><br><span class="line">    catch &#123; &#125;</span><br><span class="line">    count += charUtils.string2ByteArr(data).Length;</span><br><span class="line">    <span class="keyword">this</span>.Dock_lbl_RBytes.Text = count.ToString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>然后就是调用判断了, 发送的计算调用很简单 , 调用一次写入也调用一次计算即可, 然后是接收判断, 其实也很简单, 在接收线程那里我们做的就是更新ui也就获得到了接收的数据, 我们就只要在更新ui后也计算一下数据字节即可.</li>
+</ul>
+<h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2><p>最后贴上一下我写的串口助手的链接<a href="/Utils/PortAssistant.exe">点击下载</a> .<br>再附上一下项目的git地址<a target="_blank" rel="noopener" href="https://github.com/null-ecp/PortAssistant-CSharp">点击跳转</a> .</p>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><blockquote>
+<p>2/14 修复开启串口CPU占用率过高的问题 (其实是接收数据的线程忘了写延时 , 然后调用率太高了)</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://null-ecp.github.io/java/springDataJPA-sources.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avator.jpg">
+      <meta itemprop="name" content="Weison">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Weison's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/java/springDataJPA-sources.html" class="post-title-link" itemprop="url">SpringDataJPA运行原理分析</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-02 13:17:01 / 修改时间：14:02:35" itemprop="dateCreated datePublished" datetime="2019-11-02T13:17:01+08:00">2019-11-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>前几天把整合SpringDataJPA和Spring讲了一下 , 现在空出了点时间 , 也对SPringDataJPA的运行有点好奇 , 毕竟 , 只要编写一个接口并继承两个JPAReposity相关的接口就能自动完成单表基础操作. 于是写了个单表的CRUD来DEBUG看看SpringDataJPA的实际运行原理 .</p>
+<h1 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h1><ul>
+<li>JDK 1.8</li>
+<li>IDEA 19.01</li>
+<li>Maven 3.6</li>
+<li>Mysql 5.17</li>
+</ul>
+<h1 id="运行测试"><a href="#运行测试" class="headerlink" title="运行测试"></a>运行测试</h1><p>项目直接套用之前使用整合的那个 , 编写一个测试类进行单测</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Unit test for simple App.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@ContextConfiguration(classes = &#123;config.class&#125;)</span></span><br><span class="line"><span class="meta">@RunWith(SpringJUnit4ClassRunner.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AppTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> Customerdao customerdao;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 查询所有</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testFindAll</span><span class="params">()</span></span>&#123;</span><br><span class="line">        List&lt;Customer&gt; list = customerdao.findAll();</span><br><span class="line">        <span class="keyword">for</span> (Customer customer : list) &#123;</span><br><span class="line">            System.out.println(customer);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>给查询所有方法调用打上断点然后debug运行:<br><img src="/images/jpadebug.png" alt="debug"><br>运行到这里 , 程序正常停住  , 我们按F8往下执行一步 , 可以发现 我们 进入了一个叫做<code>JDKDynamicAOPProxy</code>的类中的<code>invoke()</code>方法 , 从这里可以看出 , JPA在运行时其实是创建了一个动态代理对象来执行方法 , 这里也就能解释为什么 , 只要继承JPA接口即可完成CRUD功能.</p>
+<p>再往下一步一步执行 , 我们可以发现下面的变量监控中出现了一个代理对象<code>proxy</code> , 类型是<code>SimpleJPAReposity</code> , 并且执行的方法也是我们调用的<code>Findall</code>方法.<br><img src="/images/jpaproxy.png" alt="proxyvar"></p>
+<p>但是我们并不确定 , 实际执行的对象就是这个类型的 .</p>
+<p>继续往下运行 , 可以看到有个target对象(代理执行的真正对象在这里了) , 这里可以看到初始化为null , 我们继续往下执行 , 可以看到在这里 , 有了对target的实际赋值操作 :<br><img src="/images/targetvar.png" alt="targetvar"></p>
+<p>这个时候我们返回去再看看target初始化的地方:<br><img src="/images/japtarget.png" alt="proxyvar"><br>可以看到target有了真实的引用地址了 , 这个指向的地址类型可以发现 , 其实也就是最开始我们推断的<code>SimpleJPAReposity</code> .</p>
+<p>点进去看看 , 可以发现这个类实现了之前我们编写的持久层继承的两个JPA的接口:<br><img src="/images/simple.png" alt="proxyvar"></p>
+<p>于是在这里我便往下翻 , 很快就找到了我们要调用的<code>FindAll</code>方法:<br><img src="/images/simplefind.png" alt="proxyvar"></p>
+<p>可以看到 , 这里的返回它调用了当前类中的<code>getQuery</code>方法 , 我们点过去看一下:<br><img src="/images/simpleem.png" alt="proxyvar"></p>
+<p>在这个<code>getQuery</code>方法里  , 返回的是<code>this.em.createQuery()</code>方法 , 有没有对这个<code>createQuery()</code>方法有点熟悉? 这个方法就是java 的 JPA规范实现的创建创建查询的方法 , 那么这个<code>em</code>的类型我们其实已经可以知道了 , 我们点过去看一下:<br><img src="/images/em.png" alt="proxyvar"></p>
+<p>和我想象的一样 , 其实就是一个<code>EntityManager</code>类型的对象.</p>
+<p>到这里 , SpringDataJPA的方法实现原理已经基本上清楚了</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>其实SPringDataJPA就是对java的JPA规范API进行了一个二次封装 , 更加贴近于面向对象的操作 , 简化了我们对JPA的配置.</p>
+<p>其内部还是<code>EntityManager</code>管理器在对持久化单元进行的操作.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://null-ecp.github.io/java/springDataJPA-Config.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avator.jpg">
+      <meta itemprop="name" content="Weison">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Weison's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/java/springDataJPA-Config.html" class="post-title-link" itemprop="url">使用Java类配置整合SpringDataJPA</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-10-31 09:17:01 / 修改时间：17:02:43" itemprop="dateCreated datePublished" datetime="2019-10-31T09:17:01+08:00">2019-10-31</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在学<code>Spring</code>的路上偶然用上了一次<code>SpringDataJpa</code> , 不需要自己手写sql的方式 , 让我用的非常舒服 , 这和我以前用的<code>mybatis</code>用起来是完全不一样的体验 , 不过由于之前对Spring不是特别的了解 , 是跟着书上的XML配置一步一步走过来的.</p>
+<p>现在回头看过去发现这种配置虽然简单易上手 , 但是XML配置标签繁多 , 可读性差 ,而且最大的问题是类型不安全.</p>
+<p>SPring还支持XML + 注解的方式进行配置 , 这种配置简单明了 , 但是注解的配置只能针对自定义的包进行快速配置 , 对于第三方类库 , 我们还是需要XML来配置.</p>
+<p>不过从<code>Spring3.0</code>开始 , Spring支持了一种新的配置方式 <code>JavaConfig</code> , 也就是通过java类来进行Spring的配置.</p>
+<blockquote>
+<p>emmm, 讲多了 ,其实使用java类配置纯粹因为我懒,xml写起来太麻烦了 , 有时候还不带联想 23333</p>
+</blockquote>
+<h1 id="项目环境"><a href="#项目环境" class="headerlink" title="项目环境"></a>项目环境</h1><ul>
+<li>JDK 1.8</li>
+<li>IDEA 19.01</li>
+<li>Maven 3.6</li>
+</ul>
+<p>这里只做了Spring整合SpringDataJPA的配置 , 然后用单测进行测试 , 没有和SpringMVC进行整合</p>
+<h1 id="项目依赖"><a href="#项目依赖" class="headerlink" title="项目依赖"></a>项目依赖</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 依赖版本控制 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">spring.version</span>&gt;</span>4.2.4.RELEASE<span class="tag">&lt;/<span class="name">spring.version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hibernate.version</span>&gt;</span>5.0.7.Final<span class="tag">&lt;/<span class="name">hibernate.version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">slf4j.version</span>&gt;</span>1.6.6<span class="tag">&lt;/<span class="name">slf4j.version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">log4j.version</span>&gt;</span>1.2.12<span class="tag">&lt;/<span class="name">log4j.version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">c3p0.version</span>&gt;</span>0.9.1.2<span class="tag">&lt;/<span class="name">c3p0.version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mysql.version</span>&gt;</span>5.1.6<span class="tag">&lt;/<span class="name">mysql.version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.11<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- spring beg --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-context<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;spring.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-context-support<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;spring.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-orm<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;spring.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-beans<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;spring.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;spring.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- spring end --&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- hibernate beg --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.hibernate<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>hibernate-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;hibernate.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.hibernate<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>hibernate-entitymanager<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;hibernate.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.hibernate<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>hibernate-validator<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.1.Final<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- hibernate end --&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- c3p0 beg --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>c3p0<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>c3p0<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;c3p0.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- c3p0 end --&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- log end --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;log4j.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.slf4j<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>slf4j-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;slf4j.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.slf4j<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>slf4j-log4j12<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;slf4j.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- log end --&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;mysql.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.data<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-data-jpa<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.9.0.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-test<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.2.4.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- el beg 使用spring data jpa 必须引入 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.el<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>javax.el-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.glassfish.web<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>javax.el<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- el end --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="创建工程"><a href="#创建工程" class="headerlink" title="创建工程"></a>创建工程</h1><p>使用idea创建maven项目 , 选空骨架或者quickstart都可以 , 这里不整合Springmvc不用选webapp .</p>
+<p>创建完项目后 , 把大概目录创建好<br><img src="/images/jpadir.png" alt="项目结构"></p>
+<h1 id="进行配置"><a href="#进行配置" class="headerlink" title="进行配置"></a>进行配置</h1><h2 id="java配置类"><a href="#java配置类" class="headerlink" title="java配置类"></a>java配置类</h2><p>在config包下创建config类当作Spring的配置类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">config</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>添加<code>@Configuration</code>注解来声明当前类是一个配置类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">config</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后添加jpa核心bean<code>EntityManagerFactory</code> , 以及相关属性需要的bean</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">config</span> </span>&#123;</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 数据库连接池</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> PropertyVetoException</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> DataSource <span class="title">dataSource</span><span class="params">()</span> <span class="keyword">throws</span> PropertyVetoException </span>&#123;</span><br><span class="line">        ComboPooledDataSource dataSource = <span class="keyword">new</span> ComboPooledDataSource();</span><br><span class="line">        dataSource.setJdbcUrl(<span class="string">&quot;jdbc:mysql:///test&quot;</span>);</span><br><span class="line">        dataSource.setDriverClass(<span class="string">&quot;com.mysql.jdbc.Driver&quot;</span>);</span><br><span class="line">        dataSource.setPassword(<span class="string">&quot;root&quot;</span>);</span><br><span class="line">        dataSource.setUser(<span class="string">&quot;root&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> dataSource;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * jpa实现厂家</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> HibernatePersistenceProvider <span class="title">persistenceProvider</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> HibernatePersistenceProvider();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 实现厂家适配器</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> JpaVendorAdapter <span class="title">jpaVendorAdapter</span><span class="params">()</span></span>&#123;</span><br><span class="line">        HibernateJpaVendorAdapter jpaVendorAdapter =</span><br><span class="line">                <span class="keyword">new</span> HibernateJpaVendorAdapter();</span><br><span class="line">        jpaVendorAdapter.setDatabase(Database.MYSQL);</span><br><span class="line">        jpaVendorAdapter.setGenerateDdl(<span class="keyword">false</span>);</span><br><span class="line">        jpaVendorAdapter.setShowSql(<span class="keyword">true</span>);</span><br><span class="line">        jpaVendorAdapter.setDatabasePlatform(<span class="string">&quot;org.hibernate.dialect.MySQLDialect&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> jpaVendorAdapter;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * jpa方言</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> JpaDialect <span class="title">jpaDialect</span><span class="params">()</span></span>&#123;</span><br><span class="line">        HibernateJpaDialect dialect = <span class="keyword">new</span> HibernateJpaDialect();</span><br><span class="line">        <span class="keyword">return</span> dialect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * jpa工厂类</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> PropertyVetoException</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> LocalContainerEntityManagerFactoryBean <span class="title">entityManagerFactory</span><span class="params">()</span> <span class="keyword">throws</span> PropertyVetoException </span>&#123;</span><br><span class="line">        LocalContainerEntityManagerFactoryBean entityManagerFactory =</span><br><span class="line">                <span class="keyword">new</span> LocalContainerEntityManagerFactoryBean();</span><br><span class="line">        <span class="comment">// 设置数据库连接池</span></span><br><span class="line">        entityManagerFactory.setDataSource(dataSource());</span><br><span class="line">        <span class="comment">// 设置自动扫描实体类</span></span><br><span class="line">        entityManagerFactory.setPackagesToScan(<span class="string">&quot;com.weison.domain&quot;</span>);</span><br><span class="line">        <span class="comment">// 设置jpa实现厂家</span></span><br><span class="line">        entityManagerFactory.setPersistenceProvider(persistenceProvider());</span><br><span class="line">        <span class="comment">// 设置实现厂家适配器</span></span><br><span class="line">        entityManagerFactory.setJpaVendorAdapter(jpaVendorAdapter());</span><br><span class="line">        <span class="comment">// 设置jpa方言</span></span><br><span class="line">        entityManagerFactory.setJpaDialect(jpaDialect());</span><br><span class="line">        <span class="keyword">return</span> entityManagerFactory;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后添加事务支持 , emmm  , 虽然现在直接用单测也用不到事务 , 不过还是加上吧</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 事务管理器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> PlatformTransactionManager <span class="title">transactionManager</span><span class="params">()</span> <span class="keyword">throws</span> PropertyVetoException </span>&#123;</span><br><span class="line">    JpaTransactionManager transactionManager = <span class="keyword">new</span> JpaTransactionManager();</span><br><span class="line">    transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());</span><br><span class="line">    <span class="keyword">return</span> transactionManager;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>最后在添加下包自动扫描注解 , 添加Jpa代理持久层扫描目录</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// java配置类</span></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="comment">// 自动扫描spring注解包路径</span></span><br><span class="line"><span class="meta">@ComponentScan(&quot;com.weison&quot;)</span></span><br><span class="line"><span class="comment">// Jpa代理持久层路径</span></span><br><span class="line"><span class="meta">@EnableJpaRepositories(&quot;com.weison.dao&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">config</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>@EnableJpaRepositories</code>注解还支持其他一些属性的配置 , 如果jpa工厂和事务管理器的bean id不为规定写法 , 则需要自己添加属性<br><img src="/images/jpazj.png" alt="默认值"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@EnableJpaRepositories(basePackages = &quot;com.weison.dao&quot;,</span></span><br><span class="line"><span class="meta">                        entityManagerFactoryRef = &quot;工厂beanid&quot;,</span></span><br><span class="line"><span class="meta">                        transactionManagerRef = &quot;事务管理器beanid&quot;)</span></span><br></pre></td></tr></table></figure>
+<p>配置类搞完后现在来配置下实体类</p>
+<h2 id="配置实体类"><a href="#配置实体类" class="headerlink" title="配置实体类"></a>配置实体类</h2><p>创建Customer客户实体类<br>需要在实体类上加上两个注解</p>
+<ul>
+<li><code>@Entity</code> : 注明该类为实体类</li>
+<li><code>@Table</code> : 注明该实体类映射的数据库表 ,需要配置name属性</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 声明实体类</span></span><br><span class="line"><span class="meta">@Entity</span></span><br><span class="line"><span class="comment">// 映射表</span></span><br><span class="line"><span class="meta">@Table(name = &quot;customer&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Customer</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后配置实体类属性并配置属性对应的数据库表列</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 声明实体类</span></span><br><span class="line"><span class="meta">@Entity</span></span><br><span class="line"><span class="comment">// 映射表</span></span><br><span class="line"><span class="meta">@Table(name = &quot;customer&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Customer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 指定主键</span></span><br><span class="line">    <span class="meta">@Id</span></span><br><span class="line">    <span class="comment">// 配置主键生成策略</span></span><br><span class="line">    <span class="meta">@GeneratedValue(strategy = GenerationType.IDENTITY)</span></span><br><span class="line">    <span class="meta">@Column(name = &quot;cust_id&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> Long custId;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Column(name = &quot;cust_name&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String custName;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Column(name = &quot;cust_source&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String custSource;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Column(name = &quot;cust_industry&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String custIndustry;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Column(name = &quot;cust_level&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String custLevel;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Column(name = &quot;cust_address&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String custAddress;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Column(name = &quot;cust_phone&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String custPhone;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>配置完成后 , 再来配置持久层</p>
+<h2 id="持久层配置"><a href="#持久层配置" class="headerlink" title="持久层配置"></a>持久层配置</h2><p>创建持久层接口 , 并继承Jpa接口来完成Jpa自动代理</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * JpaRepository&lt;实体类类型, 主键类型&gt;</span></span><br><span class="line"><span class="comment"> *     - 已经封装了基本的CRUD操作</span></span><br><span class="line"><span class="comment"> * JpaSpecificationExecutor&lt;实体类类型&gt;</span></span><br><span class="line"><span class="comment"> *     - 负责复杂查询</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Repository</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Customerdao</span> <span class="keyword">extends</span> <span class="title">JpaRepository</span>&lt;<span class="title">Customer</span>,<span class="title">Long</span>&gt; ,</span></span><br><span class="line"><span class="class">        <span class="title">JpaSpecificationExecutor</span>&lt;<span class="title">Customer</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>配置到这里 , Spring和SpringdataJpa的整合已经完成了 , 可以进行测试看看</p>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>创建test测试类</p>
+<p>加上SPringtest注解</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 指定配置类位置</span></span><br><span class="line"><span class="meta">@ContextConfiguration(classes = &#123;config.class&#125;)</span></span><br><span class="line"><span class="comment">// 使用SPringtest</span></span><br><span class="line"><span class="meta">@RunWith(SpringJUnit4ClassRunner.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AppTest</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编写测试方法进行测试 , 添加私有成员让Spring自动注入</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> Customerdao customerdao;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查询所有</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testFindAll</span><span class="params">()</span></span>&#123;</span><br><span class="line">    List&lt;Customer&gt; list = customerdao.findAll();</span><br><span class="line">    <span class="keyword">for</span> (Customer customer : list) &#123;</span><br><span class="line">        System.out.println(customer);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/jparun.png" alt="运行结果"></p>
+<blockquote>
+<p>ok , 测试很顺利 , 完美运行</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://null-ecp.github.io/java/springAOP-log.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avator.jpg">
+      <meta itemprop="name" content="Weison">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Weison's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/java/springAOP-log.html" class="post-title-link" itemprop="url">Spring AOP配置日志</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-07-10 09:17:01 / 修改时间：11:26:53" itemprop="dateCreated datePublished" datetime="2019-07-10T09:17:01+08:00">2019-07-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>首先讲一下<code>SpringAOP</code> ,  在学过Spring之后 , 各位对Spring的两个要点肯定不陌生 , 一个是<code>DI(依赖注入)</code> , 一个就是<code>AOP(切面编程)</code><br>那么AOP即切面编程 到底是用来做什么的呢 ? </p>
+<p>我们先来看下下面这段代码:<br><img src="/images/Aop.jpg" alt="没有使用aop的业务代码块"></p>
+<p>我们学Java面向对象的时候，如果代码重复了怎么办啊？？可以分成下面几个步骤：</p>
+<ul>
+<li>抽取成方法</li>
+<li>抽取成类<br>抽取成类的方式我们称之为：<strong>纵向抽取</strong></li>
+</ul>
+<p>但是，我们现在的办法不行：即使抽取成类还是会出现重复的代码，因为这些逻辑(开始、结束、提交事务)<strong>依附在我们业务类的方法逻辑中</strong>！</p>
+<p>现在纵向抽取的方式不行了，AOP的理念：<strong>就是将分散在各个业务逻辑代码中相同的代码通过横向切割的方式抽取到一个独立的模块中</strong>！</p>
+<p><img src="/images/aopcut.jpg" alt="横向抽取"></p>
+<p>上面的图也很清晰了，将重复性的逻辑代码横切出来其实很容易(我们简单可认为就是封装成一个类就好了)，但我们要将这些被我们横切出来的逻辑代码融合到业务逻辑中，来完成和之前(没抽取前)一样的功能！这就是AOP首要解决的问题了！</p>
+<h1 id="AOP原理"><a href="#AOP原理" class="headerlink" title="AOP原理"></a>AOP原理</h1><p>AOP的实现原理也很简单 , 就是通过<strong>动态代理</strong>我们的业务逻辑类 , 来对我们业务逻辑的方法进行增强.</p>
+<p>来源《精通Spring4.x 企业应用开发实战》一段话：</p>
+<blockquote>
+<p>Spring AOP使用纯Java实现，它不需要专门的编译过程，也不需要特殊的类装载器，它在运行期通过代理方式向目标类织入增强代码。在Spring中可以无缝地将Spring AOP、IoC和AspectJ整合在一起。</p>
+</blockquote>
+<p>来源《Spring 实战 (第4版)》一句话：</p>
+<blockquote>
+<p>Spring AOP构建在动态代理基础之上，因此，Spring对AOP的支持局限于方法拦截。</p>
+</blockquote>
+<p>java中的想实现动态代理有两种方法 : </p>
+<ol>
+<li>JDK动态代理 (通过实现被代理类相同的接口完成)</li>
+<li>CGLib动态代理(通过继承被代理类完成)</li>
+</ol>
+<p>JDK动态代理是需要实现某个接口了，而我们类未必全部会有接口，于是CGLib代理就有了</p>
+<ul>
+<li>CGLib代理其生成的动态代理对象是目标类的子类</li>
+<li>Spring AOP默认是使用JDK动态代理，如果代理的类没有接口则会使用CGLib代理。</li>
+</ul>
+<p>看到这里我们就应该知道什么是Spring AOP(面向切面编程)了：将相同逻辑的重复代码横向抽取出来，使用动态代理技术将这些重复代码织入到目标对象方法中，实现和原来一样的功能。</p>
+<p>这样一来，我们就在写业务时只关心业务代码，而不用关心与业务无关的代码.</p>
+<p>那么介绍到这里也算把AOP的核心理念给讲述了一遍<br>这里给到一个我在最近做的一个后台管理系统时 , 用AOP完成日志处理的一些过程和想法</p>
+<h1 id="使用AOP来完成日志处理"><a href="#使用AOP来完成日志处理" class="headerlink" title="使用AOP来完成日志处理"></a>使用AOP来完成日志处理</h1><blockquote>
+<p>这个日志主要用来收集 , 系统在何时被哪个用户访问和访问的路径 , 方法 等等</p>
+</blockquote>
+<h2 id="创建日志实体类"><a href="#创建日志实体类" class="headerlink" title="创建日志实体类"></a>创建日志实体类</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> clss SysLog&#123;</span><br><span class="line">	<span class="keyword">private</span> String id;                  <span class="comment">// 日志 id</span></span><br><span class="line">    <span class="keyword">private</span> Date visitTime;             <span class="comment">// 访问时间</span></span><br><span class="line">    <span class="keyword">private</span> String visitTimeStr;</span><br><span class="line">    <span class="keyword">private</span> String username;            <span class="comment">// 访问用户 用户名</span></span><br><span class="line">    <span class="keyword">private</span> String ip;                  <span class="comment">// 访问用户 id</span></span><br><span class="line">    <span class="keyword">private</span> String url;                 <span class="comment">// 访问路径</span></span><br><span class="line">    <span class="keyword">private</span> Long executionTime;         <span class="comment">// 执行访问操作时间</span></span><br><span class="line">    <span class="keyword">private</span> String method;              <span class="comment">// 执行方法</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * getter setter 这里省略</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="创建对应的数据库"><a href="#创建对应的数据库" class="headerlink" title="创建对应的数据库"></a>创建对应的数据库</h2><blockquote>
+<p>这里把对应的日志我们存入到数据库中, 并没用日志文件来存储 , 数据库用的oracle(目前正在学习这个)</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 日志</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> sysLog( </span><br><span class="line">id VARCHAR2(<span class="number">32</span>) <span class="keyword">default</span> SYS_GUID() <span class="keyword">PRIMARY</span> KEY, <span class="comment">-- id 主键 默认随机uuid</span></span><br><span class="line">visitTime <span class="type">timestamp</span>, 							<span class="comment">-- 访问时间</span></span><br><span class="line">username VARCHAR2(<span class="number">50</span>), 							<span class="comment">-- 访问用户</span></span><br><span class="line">ip VARCHAR2(<span class="number">30</span>), 								<span class="comment">-- 访问用户ip地址</span></span><br><span class="line">url VARCHAR2(<span class="number">50</span>), 								<span class="comment">-- 访问路径</span></span><br><span class="line">executionTime <span class="type">int</span>, 								<span class="comment">-- 执行时间</span></span><br><span class="line"><span class="keyword">method</span> VARCHAR2(<span class="number">200</span>) 							<span class="comment">-- 访问方法</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h2 id="创建切面类"><a href="#创建切面类" class="headerlink" title="创建切面类"></a>创建切面类</h2><blockquote>
+<p>注意要在spring配置文件中开启对日志包的扫描</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 让springioc容器可以扫描到该类</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="comment">// 用于声明当前类为一个切面类</span></span><br><span class="line"><span class="meta">@Aspect</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SysLogAOP</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们主要是对<code>Controller</code>层的访问进行日志处理(访问路径获取)</p>
+<p>由于我们在定义日志时要获取访问时间和方法执行时间 , 那么我们就需要给给切入点配置两个通知 :</p>
+<ul>
+<li>一个<code>前置通知</code> , 用于获取方法访问时间和访问方法</li>
+<li>一个<code>后置通知</code> , 用于获取剩下的日志数据</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@Aspect</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SysLogAOP</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 配置前置通知 , 对所有的controller中的方法进行增强</span></span><br><span class="line"><span class="comment">     * 用于获取切入时间(方法执行时间), 执行方法的类名, 执行的方法</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> jp 方法切入点对象(可以理解为封装切点方法后的对象)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">	<span class="meta">@Before(&quot;execution(* com.weison.controller.*.*(..))&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dobefore</span><span class="params">(JoinPoint jp)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 配置后置通知 , 对所有的controller中的方法进行增强</span></span><br><span class="line"><span class="comment">     * 用于获取方法执行时间(方法执行耗费时间), 访问用户, 访问用户的ip</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> jp 方法切入点对象(可以理解为封装切点方法后的对象)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">	<span class="meta">@After(&quot;execution(* com.weison.controller.*.*(..))&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doafter</span><span class="params">(JoinPoint jp)</span></span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>由于我们要获取执行时间是在第二个方法 , 也就是后置通知中配置  , 而访问时间是在前置通知中获取 , 那么这里我们需要定义一个成员变量<code>Date startTime</code><br>其实也可以再定义两个成员变量<code>Class executClass</code> 和 <code>Mehtod executMethod</code> , 用于后置通知中日志实体对象的属性封装.</p>
+<p>首先 , 我们在前置通知中 直接 给 <code>startTime</code> 赋值(获取到访问时间) , 然后通过<code>通知方法</code>的<code>JoinPoint</code>的实现类来获取到我们执行类和执行方法名还有执行方法的参数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Before(&quot;execution(* com.weison.controller.*.*(..))&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dobefore</span><span class="params">(JoinPoint jp)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 获取执行时间</span></span><br><span class="line">        starttime = <span class="keyword">new</span> Date();</span><br><span class="line">        <span class="comment">// 获取执行的方法的类</span></span><br><span class="line">        executclass = jp.getTarget().getClass();</span><br><span class="line">        <span class="comment">// 获取执行的方法名</span></span><br><span class="line">        String methodname = jp.getSignature().getName();</span><br><span class="line">        <span class="comment">// 获取执行方法的参数</span></span><br><span class="line">        Object[] args = jp.getArgs();</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>然后我们先判断参数数组是否为空 , 为空则可以直接通过反射来获取执行方法()</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取到的参数集合为null或者数组长度为0则为无参方法</span></span><br><span class="line"><span class="keyword">if</span> (args == <span class="keyword">null</span> || args.length == <span class="number">0</span>)&#123; </span><br><span class="line">	<span class="comment">// 注意 , 该方法只能获取到无参的方法</span></span><br><span class="line">	executmethod = executclass.getMethod(methodname);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果数组不为空且长度不为零 , 则我们可以创建一个<code>Class</code>数组来存放这些参数的类对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (args != <span class="keyword">null</span> &amp;&amp; args.length &gt; <span class="number">0</span>)&#123; <span class="comment">// 表示执行方法有参数 需要 封装参数</span></span><br><span class="line">	<span class="comment">// 创建类数组来存储参数</span></span><br><span class="line">	Class[] argsclass = <span class="keyword">new</span> Class[args.length];</span><br><span class="line">	<span class="comment">// 循环写进参数</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; argsclass.length; i++) &#123;</span><br><span class="line">		argsclass[i] = args[i].getClass();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们可以点进<code>getMethod</code>方法 , 可以看到这个方法是个不定长参数的方法 , 除了传入<code>methodname</code>还可以传入<code>Class</code>对象和<code>Class[]</code>数组</p>
+<p>所以我们可以在上面的判断体中接着写入 : </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">executmethod = executclass.getMethod(methodname,argsclass);</span><br></pre></td></tr></table></figure>
+<p>到这里前置通知已经弄完了 , 我们已经获取到了访问时间和执行方法</p>
+<p>接下来我们配置后置通知 </p>
+<p>后置通知是在切入点执行完成后执行的 , 所以我们第一个就可以把执行时间给获取到</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@After(&quot;execution(* com.weison.controller.*.*(..))&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doafter</span><span class="params">(JoinPoint jp)</span></span>&#123;</span><br><span class="line">	 <span class="comment">// 获取执行时间</span></span><br><span class="line">	 <span class="keyword">long</span> executtime = <span class="keyword">new</span> Date().getTime() - starttime.getTime();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后是获取url , 我项目用的是springmvc来完成的controller的展示和路径分发的 , 所以这里我们获取路径的就相对简单了很多<br>项目使用了requestMapping注解来来配置路径 , 所以我们这里就可以通过反射来获取注解对象在通过类型转换获取到注解的属性值:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取访问的url</span></span><br><span class="line"><span class="comment">// 先声明一个空字符串来拼接</span></span><br><span class="line">StringBuilder url = <span class="keyword">new</span> StringBuilder(<span class="string">&quot;&quot;</span>);</span><br><span class="line">RequestMapping classurl = (RequestMapping) executclass.getAnnotation(RequestMapping.class);</span><br><span class="line"><span class="keyword">if</span> (classurl != <span class="keyword">null</span>) &#123;</span><br><span class="line">	url.append(classurl.value()[<span class="number">0</span>]);</span><br><span class="line">&#125;</span><br><span class="line">RequestMapping methodurl = (RequestMapping) executmethod.getAnnotation(RequestMapping.class);</span><br><span class="line"><span class="keyword">if</span> (methodurl != <span class="keyword">null</span>) &#123;</span><br><span class="line">	url.append(methodurl.value()[<span class="number">0</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后是获取ip地址 , 这个就相对简单一点 , 我们在<code>web.xml</code>文件中配置一个监听器就可以了 , 这个监听器是spring框架集成的 , 专门用于监听request域对象的产生和销毁的</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 配置监听器，监听request域对象的创建和销毁的 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">listener</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">listener-class</span>&gt;</span>org.springframework.web.context.request.RequestContextListener<span class="tag">&lt;/<span class="name">listener-class</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">listener</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>然后我们在切面类中声明一个成员变量 , 然后使用<code>@AutoWired</code>注解自动注入就可以了</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// web.xml配置监听器后自动生成的 , 我们可以直接注入</span></span><br><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> HttpServletRequest request;</span><br></pre></td></tr></table></figure>
+<p>然后我们获取下访问用户的ip地址 :</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取ip地址</span></span><br><span class="line">	String ip = request.getRemoteAddr();</span><br></pre></td></tr></table></figure>
+<p>到这里我们还差访问用户就算把日志内容给获取完整了  , 如果是直接把用户存入session中的 , 就通过session来获取即可 , 我当前写的项目使用的是<code>Spring Security</code>来完成用户的登录验证的 , 所以这里我需要获取到<code>SecurityContext</code>对象来获取<code>User</code>对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取到SecurityContext 对象</span></span><br><span class="line">SecurityContext context = SecurityContextHolder.getContext();</span><br><span class="line"><span class="comment">// 获取到当前的操作对象(可以点进方法可以看到context对象中存储的这个对象是歌user对象, 这里我就不做判断直接强转)</span></span><br><span class="line">User user = (User) context.getAuthentication().getPrincipal();</span><br><span class="line"><span class="comment">// 获取用户名</span></span><br><span class="line">String username = user.getUsername();</span><br></pre></td></tr></table></figure>
+<p>然后我们封装下这些日志信息到实体对象中:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">SysLog sysLog = <span class="keyword">new</span> SysLog();</span><br><span class="line"><span class="comment">// 封装日志信息</span></span><br><span class="line">sysLog.setExecutionTime(executtime);</span><br><span class="line">sysLog.setIp(ip);</span><br><span class="line">sysLog.setMethod(<span class="string">&quot;[调用类] &quot;</span> + executclass.getName() + <span class="string">&quot;\n[执行方法] &quot;</span> + executmethod.getName());</span><br><span class="line">sysLog.setUrl(url);</span><br><span class="line">sysLog.setUsername(username);</span><br><span class="line">sysLog.setVisitTime(starttime);</span><br></pre></td></tr></table></figure>
+<p>调用<code>SysLogservice</code>业务处理层把sysLog对象存进数据库</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> SysLogservice sysLogservice;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 存储数据</span></span><br><span class="line">sysLogservice.save(sysLog);</span><br></pre></td></tr></table></figure>
+<p>到这里 , 这个基于切面的日志处理就算完成了 , 为了便于查看日志访问信息 , 顺便在后台管理里写了一个页面用于查看 : </p>
+<p><img src="/images/logshow.png" alt="日志查看"></p>
+<p>源码我已经上传到了github, 有需要的去看就好了 , <a target="_blank" rel="noopener" href="https://github.com/null-ecp/AOPLog">点我跳转到仓库</a>;</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://null-ecp.github.io/oracle/oracle-server.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avator.jpg">
+      <meta itemprop="name" content="Weison">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Weison's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/oracle/oracle-server.html" class="post-title-link" itemprop="url">oracle解决远程连接监听问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-07-03 16:08:55 / 修改时间：16:28:25" itemprop="dateCreated datePublished" datetime="2019-07-03T16:08:55+08:00">2019-07-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/oracle/" itemprop="url" rel="index"><span itemprop="name">oracle</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>用的win10预览版 , 昨天晚上关了 电脑 自动更新了 , 今天早上起来发现用plsql就连不上oracle了 , 报错如下(感觉是自动更新的锅)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ORA-12545: 因目标主机或对象不存在, 连接失败</span><br></pre></td></tr></table></figure>
+<p>然后上谷歌查了下 , 说是监听器的配置文件的ip地址问题 , 然后去修改了下文件 , 两个ip都改成了<code>localhost</code>.</p>
+<p>这里说一下 , 需要修改的配置文件是<code>listener.ora</code> 和 <code>tnsnames.ora</code> .<br>路径是<code>你电脑oracle安装目录\product\10.2.0\db_1\NETWORK\ADMIN</code>.</p>
+<p><img src="/images/local.png" alt="路径"></p>
+<p>好的 , 修改完之后 , 重启了下oracle的服务(listener服务被停止掉了 , 已经感觉到没有解决问题) , 然后进入plsql重新登录 , 发现没有报刚刚的错误了.</p>
+<p>这次换了个新的报错 …</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ORA-12541：TNS:无监听程序</span><br></pre></td></tr></table></figure>
+<p>然后我在谷歌上搜索了一会 , 发现给出的解决方案也只是我刚刚已经做过的修改ip.</p>
+<p>想了下 , 刚刚一起出现的问题 : <strong>listener服务被停止</strong> </p>
+<p>然后换了个思路 , 如何把这个监听服务给启动 . 然后再一篇很老的博客里看到了解决步骤 .</p>
+<p>首先用管理员身份启动 <code>Net Configration Assistant</code>这个软件 (oracle安装时附带安装的 , 用来配置远程连接的)</p>
+<p>然后选择<code>监听程序配置</code></p>
+<p>如果想要删除当前配置重新设置就选<code>删除</code> , 如果想重新配置就选<code>重新配置</code></p>
+<p>重新配置选择协议的时候 , 选了<code>IPC</code> 记得 配置连接 密钥 , 也就是你之前配的别名. emmm , 比如 <code>ORCL</code> 这种</p>
+<p>配置完了之后选择完成 , 然后会自动关闭窗口 .</p>
+<p>然后打开终端 , <code>cmd</code>和<code>powershell</code>都行 , 输入<code>lsnrctl start</code> 回车  , 就会启动你配置的监听器 , 如果感觉还不放心的话 就去 服务里再重启下oracle的服务.</p>
+<p>重启完成后 , 打开plsql , 再次连接 , 就可以发现可以完美连接了 ! </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Weison"
+      src="/images/avator.jpg">
+  <p class="site-author-name" itemprop="name">Weison</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Weison</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
