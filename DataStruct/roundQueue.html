@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"null-ecp.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="队列队列是一种先进先出的线性存储的数据结构，常用于缓存，消息队列（废话 ，我名字都叫队列）。在进行大量数据交互时，队列能很有效的解决并发问题。 但是又由于队列的先进先出的特性，但队列的进的速度 &gt; 队列出的速度时 ，就会出现以下状况：  在这种情况下肯定是不能进行插入了的,因为队尾指针已经走到最后. 但其实队首指针并不在起始索引的位置, 前面还是有空出的位置 , 但是如果把数据插在这里队列的">
+  <meta name="description" content="队列队列是一种先进先出的线性存储的数据结构，常用于缓存，消息队列（废话 ，我名字都叫队列）。在进行大量数据交互时，队列能很有效的解决并发问题。 但是又由于队列的先进先出的特性，但队列的进的速度 &gt; 队列出的速度时 ，就会出现以下状况：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构篇 之 环形队列">
 <meta property="og:url" content="http://null-ecp.github.io/DataStruct/roundQueue.html">
 <meta property="og:site_name" content="Weison&#39;s Blog">
-<meta property="og:description" content="队列队列是一种先进先出的线性存储的数据结构，常用于缓存，消息队列（废话 ，我名字都叫队列）。在进行大量数据交互时，队列能很有效的解决并发问题。 但是又由于队列的先进先出的特性，但队列的进的速度 &gt; 队列出的速度时 ，就会出现以下状况：  在这种情况下肯定是不能进行插入了的,因为队尾指针已经走到最后. 但其实队首指针并不在起始索引的位置, 前面还是有空出的位置 , 但是如果把数据插在这里队列的">
+<meta property="og:description" content="队列队列是一种先进先出的线性存储的数据结构，常用于缓存，消息队列（废话 ，我名字都叫队列）。在进行大量数据交互时，队列能很有效的解决并发问题。 但是又由于队列的先进先出的特性，但队列的进的速度 &gt; 队列出的速度时 ，就会出现以下状况：">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://null-ecp.github.io/images/Queue.png">
 <meta property="og:image" content="http://null-ecp.github.io/images/roundQ.png">
@@ -367,7 +367,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
